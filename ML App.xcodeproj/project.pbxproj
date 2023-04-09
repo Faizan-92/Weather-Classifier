@@ -14,7 +14,6 @@
 		B3AC89BC29E277D900EF5E5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3AC89BB29E277D900EF5E5B /* Assets.xcassets */; };
 		B3AC89BF29E277D900EF5E5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3AC89BD29E277D900EF5E5B /* LaunchScreen.storyboard */; };
 		B3AC89C729E27C9200EF5E5B /* Weather Classifier Model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B3AC89C629E27C9200EF5E5B /* Weather Classifier Model.mlmodel */; };
-		B3AC89CA29E284CA00EF5E5B /* CGImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AC89C929E284CA00EF5E5B /* CGImageExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		B3AC89BE29E277D900EF5E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3AC89C029E277D900EF5E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3AC89C629E27C9200EF5E5B /* Weather Classifier Model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Weather Classifier Model.mlmodel"; sourceTree = "<group>"; };
-		B3AC89C929E284CA00EF5E5B /* CGImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +58,6 @@
 		B3AC89B129E277D800EF5E5B /* ML App */ = {
 			isa = PBXGroup;
 			children = (
-				B3AC89C829E284B700EF5E5B /* Extensions */,
 				B3AC89B229E277D800EF5E5B /* AppDelegate.swift */,
 				B3AC89B429E277D800EF5E5B /* SceneDelegate.swift */,
 				B3AC89B629E277D800EF5E5B /* ViewController.swift */,
@@ -71,14 +68,6 @@
 				B3AC89C629E27C9200EF5E5B /* Weather Classifier Model.mlmodel */,
 			);
 			path = "ML App";
-			sourceTree = "<group>";
-		};
-		B3AC89C829E284B700EF5E5B /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				B3AC89C929E284CA00EF5E5B /* CGImageExtensions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +144,6 @@
 				B3AC89C729E27C9200EF5E5B /* Weather Classifier Model.mlmodel in Sources */,
 				B3AC89B729E277D800EF5E5B /* ViewController.swift in Sources */,
 				B3AC89B329E277D800EF5E5B /* AppDelegate.swift in Sources */,
-				B3AC89CA29E284CA00EF5E5B /* CGImageExtensions.swift in Sources */,
 				B3AC89B529E277D800EF5E5B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
