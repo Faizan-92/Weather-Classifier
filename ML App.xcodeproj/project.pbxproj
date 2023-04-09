@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		B3AC89BA29E277D800EF5E5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3AC89B829E277D800EF5E5B /* Main.storyboard */; };
 		B3AC89BC29E277D900EF5E5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3AC89BB29E277D900EF5E5B /* Assets.xcassets */; };
 		B3AC89BF29E277D900EF5E5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3AC89BD29E277D900EF5E5B /* LaunchScreen.storyboard */; };
+		B3AC89C729E27C9200EF5E5B /* Weather Classifier Model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B3AC89C629E27C9200EF5E5B /* Weather Classifier Model.mlmodel */; };
+		B3AC89CA29E284CA00EF5E5B /* CGImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AC89C929E284CA00EF5E5B /* CGImageExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B3AC89BB29E277D900EF5E5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3AC89BE29E277D900EF5E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3AC89C029E277D900EF5E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3AC89C629E27C9200EF5E5B /* Weather Classifier Model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Weather Classifier Model.mlmodel"; sourceTree = "<group>"; };
+		B3AC89C929E284CA00EF5E5B /* CGImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		B3AC89B129E277D800EF5E5B /* ML App */ = {
 			isa = PBXGroup;
 			children = (
+				B3AC89C829E284B700EF5E5B /* Extensions */,
 				B3AC89B229E277D800EF5E5B /* AppDelegate.swift */,
 				B3AC89B429E277D800EF5E5B /* SceneDelegate.swift */,
 				B3AC89B629E277D800EF5E5B /* ViewController.swift */,
@@ -63,8 +68,17 @@
 				B3AC89BB29E277D900EF5E5B /* Assets.xcassets */,
 				B3AC89BD29E277D900EF5E5B /* LaunchScreen.storyboard */,
 				B3AC89C029E277D900EF5E5B /* Info.plist */,
+				B3AC89C629E27C9200EF5E5B /* Weather Classifier Model.mlmodel */,
 			);
 			path = "ML App";
+			sourceTree = "<group>";
+		};
+		B3AC89C829E284B700EF5E5B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B3AC89C929E284CA00EF5E5B /* CGImageExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,7 +117,7 @@
 				};
 			};
 			buildConfigurationList = B3AC89AA29E277D800EF5E5B /* Build configuration list for PBXProject "ML App" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -138,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3AC89C729E27C9200EF5E5B /* Weather Classifier Model.mlmodel in Sources */,
 				B3AC89B729E277D800EF5E5B /* ViewController.swift in Sources */,
 				B3AC89B329E277D800EF5E5B /* AppDelegate.swift in Sources */,
+				B3AC89CA29E284CA00EF5E5B /* CGImageExtensions.swift in Sources */,
 				B3AC89B529E277D800EF5E5B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -295,6 +311,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +340,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
